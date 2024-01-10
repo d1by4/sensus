@@ -82,6 +82,7 @@
                 <form action="<?= BASEURL; ?>/penduduk/add" method="post">
                     <div class="modal-body">
                         <div>
+                            <input class="form-control" type="hidden" id="id" name="id" placeholder="">
                             <label for="nama">Nama Lengkap</label>
                             <input class="form-control" type="text" id="nama" name="nama" placeholder="I Kadek Dibya Wardhana Dinata">
                         </div>

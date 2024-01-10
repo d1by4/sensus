@@ -19,6 +19,7 @@ $(function () {
       method: "post",
       dataType: "json",
       success: function (data) {
+        $("#id").val(id);
         $("#nama").val(data.nama);
         $("#asal").val(data.asal);
         $("#no_tlpn").val(data.no_tlpn);

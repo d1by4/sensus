@@ -45,6 +45,8 @@ class Penduduk extends Controller
 
     public function edit()
     {
+        // var_dump($this->model('Penduduk_model')->editDataPenduduk($_POST));
+        // die();
         if ($this->model('Penduduk_model')->editDataPenduduk($_POST) > 0) {
             Flasher::setFlash('berhasil', 'diubah', 'success');
             header('Location: ' . BASEURL . '/penduduk');
